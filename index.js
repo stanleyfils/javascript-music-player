@@ -71,15 +71,16 @@ function playSong() {
 }
 
 function pause() {
+  // innerHTML allows me to use font awesome icon when the pause function is invoked.
   play.innerHTML = `<i class="fas fa-play fa-4x" style="color: CORAL;"></i>`;
   player.pause();
-  play.onclick = playCurrentSong;
+  play.onclick = playCurrentSong; // call function with no parenthesis
 }
 
 function playCurrentSong() {
   play.innerHTML = `<i class="fas fa-pause fa-4x" style="color: coral"></i>`;
   player.play();
-  play.onclick = pause;
+  play.onclick = pause; // call function with no parenthesis
 }
 
 function nextSong() {
