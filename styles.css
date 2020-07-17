@@ -16,21 +16,6 @@ input {
 
 .file-upload {
   background-image: linear-gradient(to top left, #ff8a00, #e52e71);
-  /* background-color: #fff;
-  font-family: inherit;
-  font-weight: 700;
-  border: 0;
-  border-radius: 8px;
-  white-space: nowrap;
-  padding: 1rem 1.5rem;
-  line-height: 1.4;
-  text-align: center;
-  transition: 0.07s;
-  position: relative;
-  text-decoration: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.4); */
-  /* changes pointer to finger click */
   cursor: pointer;
   display: flex;
   height: 200px;
@@ -53,25 +38,6 @@ input {
 .button-player:focus {
   border: none;
 }
-
-/* .upload-button {
-  background-image: linear-gradient(to top left, #ff8a00, #e52e71);
-  color: #fff;
-  display: inline-block;
-  font-family: inherit;
-  font-weight: 700;
-  border: 0;
-  border-radius: 8px;
-  white-space: nowrap;
-  padding: 1rem 1.5rem;
-  line-height: 1.4;
-  text-align: center;
-  transition: 0.07s;
-  position: relative;
-  text-decoration: none;
-  position: absolute;
-  cursor: [pointer];
-} */
 
 h1 {
   color: SLATEBLUE;
