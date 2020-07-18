@@ -44,6 +44,8 @@ input.onchange = getSongs;
 next.onclick = nextSong;
 prev.onclick = prevSong;
 
+// Music Player Data Fetching
+// --------------------------------------------------
 //can't use arrow function here becuase arrow functions do not hoist. function is called above function.
 function getSongs(event) {
   // event = What happened? files are uplaoded to input
@@ -70,6 +72,8 @@ function playSong() {
   play.onclick = pause;
 }
 
+// Controls & Operations
+// -------------------------------------------------
 function pause() {
   // innerHTML allows me to use font awesome icon when the pause function is invoked.
   play.innerHTML = `<i class="fas fa-play fa-4x" style="color: CORAL;"></i>`;
@@ -98,3 +102,14 @@ function prevSong() {
     playSong();
   }
 }
+
+// Progress Bar
+// -----------------------------------------------------
+
+// this function creates the elapsed time status bar in the progress bar
+const updateProgress = () => {
+  if (player.currentTime > 0) {
+    const progressBar = document.getElementById("progress");
+    progressBar.value = (player.currentTime / player.duration) * 100;
+  }
+};

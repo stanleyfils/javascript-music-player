@@ -25,6 +25,8 @@ input {
   margin-bottom: 50px;
 }
 
+/* Operational Buttons */
+/* ------------------------------------------ */
 #buttons {
   text-align: center;
 }
@@ -43,3 +45,44 @@ h1 {
   color: SLATEBLUE;
   margin: 20px;
 }
+
+/* Progress Bar */
+/* -------------------------------------------- */
+
+/* .progress-bar,
+.progress-done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+} */
+
+#progress {
+  display: flex;
+  width: 400px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* #progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  height: 20px;
+  width: 400px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 30px;
+} */
+
+/* .progress-done {
+  background-color: coral;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+} */

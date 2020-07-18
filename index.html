@@ -17,7 +17,12 @@
       <input type="file" name="songs" multiple />
       Click here to upload songs 🎶
     </label>
-    <audio></audio>
+    <audio ontimeupdate="updateProgress()"></audio>
+
+    <div>
+      <progress id="progress" max="100" value="0"></progress>
+    </div>
+
     <div id="buttons">
       <button id="prev" class="button-player">
         <i class="fas fa-fast-backward fa-4x" style="color: coral;"></i>
