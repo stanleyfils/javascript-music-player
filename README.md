@@ -1,11 +1,10 @@
 ![](images/music-player.png)
 
-JavaScript music player created via Ironhack code along.
-
-Changes made to personalize the app with my preferences:
-
-- all styling is my own
+JavaScript music player.
 
 Changes to come:
 
-- Add audio progress bar
+- Fix audio progress bar
+- Add time to progress bar
+- Add seek button to progress bar
+- Add playlist menu to see songs in queue
