@@ -64,16 +64,20 @@ h1 {
   height: 20px;
   margin: auto;
   margin-bottom: 20px;
+  overflow: hidden;
+  /* overflow: hidden is required so progress value start is synced correctly */
 }
 
 progress {
   border-radius: 20px;
+  border: 0;
   height: 100%;
   width: 100%;
 }
 progress::-webkit-progress-bar {
   background-color: #d8d8d8;
   border-radius: 20px;
+  border: 0;
   height: 100%;
   width: 100%;
   /* box-shadow: 0 3px 3px -5px #ff8a00, 0 2px 5px #ff8a00; */
@@ -81,11 +85,14 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background-image: linear-gradient(to top left, #ff8a00, #e52e71);
   border-radius: 20px;
+  border: 0;
   height: 100%;
   width: 100%;
 }
 progress::-moz-progress-bar {
   background-image: linear-gradient(to top left, #ff8a00, #e52e71);
+  border-radius: 20px;
+  border: 0;
   height: 100%;
   width: 100%;
 }
