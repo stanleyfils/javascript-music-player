@@ -12,27 +12,33 @@
 
   <body>
     <h1>Spotifake</h1>
-    <label class="file-upload">
-      <!-- multiple attribute allows us to upload multiple files -->
-      <input type="file" name="songs" multiple />
-      Click here to upload songs 🎶
-    </label>
-    <audio ontimeupdate="updateProgress()"></audio>
+    <!-- added div with class container and child div. Remove if not necessary?  -->
+    <div class="container">
+      <div>
+        <label class="file-upload">
+          <!-- multiple attribute allows us to upload multiple files -->
+          <input type="file" name="songs" multiple />
+          Click here to upload songs 🎶
+        </label>
+      </div>
+      <!-- <img src="" id="" /> -->
+      <audio ontimeupdate="updateProgress()"></audio>
 
-    <div>
-      <progress id="progress" max="100" value="0"></progress>
-    </div>
+      <div>
+        <progress id="progress" min="0" max="100" value="0"></progress>
+      </div>
 
-    <div id="buttons">
-      <button id="prev" class="button-player">
-        <i class="fas fa-fast-backward fa-4x" style="color: coral;"></i>
-      </button>
-      <button id="play" class="button-player">
-        <i class="fas fa-play fa-4x" style="color: CORAL;"></i>
-      </button>
-      <button id="next" class="button-player">
-        <i class="fas fa-fast-forward fa-4x" style="color: CORAL;" ;></i>
-      </button>
+      <div id="buttons">
+        <button id="prev" class="button-player">
+          <i class="fas fa-fast-backward fa-4x" style="color: coral;"></i>
+        </button>
+        <button id="play" class="button-player">
+          <i class="fas fa-play fa-4x" style="color: CORAL;"></i>
+        </button>
+        <button id="next" class="button-player">
+          <i class="fas fa-fast-forward fa-4x" style="color: CORAL;" ;></i>
+        </button>
+      </div>
     </div>
     <script src="./index.js"></script>
   </body>
