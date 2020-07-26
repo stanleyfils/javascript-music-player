@@ -6,7 +6,7 @@ body {
   background-color: #1c1c1c;
   color: white;
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 input {
@@ -26,6 +26,15 @@ input {
 }
 
 .thumbnail {
+  /* position: absolute; */
+  height: 200pt;
+  width: 225pt;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Operational Buttons */
