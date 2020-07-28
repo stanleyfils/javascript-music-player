@@ -27,7 +27,7 @@ let currentSong = 0;
 // ];
 
 const title = document.querySelector("h1");
-const input = document.querySelector("input");
+const input = document.querySelector('input[type="file"]');
 const label = document.querySelector("label");
 const prev = document.querySelector("#prev");
 const play = document.querySelector("#play");
@@ -101,6 +101,67 @@ function prevSong() {
     currentSong = currentSong - 1; // "currentSong--" also works
     playSong();
   }
+}
+
+// function readURL() {
+//   let songFile = document.getElementById("songFile").songs[currentSong];
+//   let reader = new FileReader();
+
+//   reader.onload = function (e) {
+//     let thumbnail = document.createElement("img");
+//     thumbnail.src = e.target.result;
+//     document.body.appendChild(thumbnail);
+//   };
+//   reader.readAsDataURL(songFile);
+// }
+
+// input.addEventListener(
+//   "change",
+//   function (e) {
+//     console.log(input.files);
+//     const reader = new FileReader();
+//     reader.onload = function () {
+//       // console.log(reader.result);
+//       const img = new Image();
+//       img.src = reader.result;
+//       document.body.appendChild(img);
+//     };
+//     reader.readAsDataURL(input.files[currentSong]);
+//   },
+//   false
+// );
+
+// use jQuery to hide thumbnail when page loads
+$(document).ready(function () {
+  $("#show-thumbnail").hide();
+});
+
+// use jQuery to hide label and show thumbnail when songs are uploaded
+// $(document).ready(function () {
+//   $("#file-upload-onclick").on("click", function () {
+//     $("#file-upload-onclick").hide(1000, function () {
+//       $("#show-thumbnail").show();
+//     });
+//   });
+// });
+
+$(document).ready(function () {
+  $("#fileInputControl").on("change", fileInputControlChangeEventHandler);
+});
+
+function fileInputControlChangeEventHandler(event) {
+  let fileInputControl = event.target;
+  let files = fileInputControl.files;
+
+  let firstFile = files[0];
+
+  let fileReader = new FileReader();
+
+  fileReader.onload = function (event) {
+    let dataURl = event.target.result;
+    $("#albumCover").attr("src", `${dataURl}`);
+  };
+  fileReader.readAsDataURL(firstFile);
 }
 
 // Progress Bar
