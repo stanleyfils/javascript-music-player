@@ -12,41 +12,30 @@
 
   <body>
     <h1>Spotifake</h1>
-    <!-- added div with class container and child div. Remove if not necessary?  -->
-    <div class="container">
-      <div>
-        <label class="file-upload">
-          <!-- multiple attribute allows us to upload multiple files -->
-          <input type="file" name="songs" multiple />
-          Click here to upload songs 🎶
-        </label>
-        <!-- <div class="thumbnail">
-          <img
-            src="./images/travis-scott.jpg"
-            id="album-cover"
-            alt="album-cover"
-          />
-        </div> -->
-      </div>
-      <!-- <img src="" id="" /> -->
-      <audio ontimeupdate="updateProgress()"></audio>
+    <label class="file-upload">
+      <!-- multiple attribute allows us to upload multiple files -->
+      <input type="file" name="songs" multiple />
+      Click here to upload songs 🎶
+    </label>
 
-      <div>
-        <progress id="progress" min="0" max="100" value="0"></progress>
-      </div>
+    <audio ontimeupdate="updateProgress()"></audio>
 
-      <div id="buttons">
-        <button id="prev" class="button-player">
-          <i class="fas fa-fast-backward fa-4x" style="color: coral;"></i>
-        </button>
-        <button id="play" class="button-player">
-          <i class="fas fa-play fa-4x" style="color: CORAL;"></i>
-        </button>
-        <button id="next" class="button-player">
-          <i class="fas fa-fast-forward fa-4x" style="color: CORAL;" ;></i>
-        </button>
-      </div>
+    <div>
+      <progress id="progress" max="100" value="0"></progress>
     </div>
-    <script src="./index.js"></script>
+
+    <div id="buttons">
+      <button id="prev" class="button-player">
+        <i class="fas fa-fast-backward fa-4x" style="color: coral;"></i>
+      </button>
+      <button id="play" class="button-player">
+        <i class="fas fa-play fa-4x" style="color: CORAL;"></i>
+      </button>
+      <button id="next" class="button-player">
+        <i class="fas fa-fast-forward fa-4x" style="color: CORAL;" ;></i>
+      </button>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="./index.js"></script>
+    </div>
   </body>
 </html>

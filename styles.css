@@ -25,18 +25,6 @@ input {
   margin-bottom: 50px;
 }
 
-.thumbnail {
-  /* position: absolute; */
-  height: 200pt;
-  width: 225pt;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Operational Buttons */
 /* ------------------------------------------ */
 #buttons {
